@@ -22,7 +22,7 @@ export const getApi = async (url, params = {}) => {
     fetch(BASE_URL + url + query, {
         headers: {
             Accept: "application/json",
-            "Content-Type": "multipart/form-data"
+            "Content-Type": "application/json"
         }
     })
     .then(response => response.json())
