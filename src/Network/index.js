@@ -4,8 +4,6 @@ import mock from './__mock'
 
 
 export const getApi = async (url, params = {}) => {
-    // console.log("url", url)
-    // console.log("params", params)
     let query = Object.keys(params)
              .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
              .join('&');
